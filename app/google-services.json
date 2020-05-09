@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "387395771951",
+    "firebase_url": "https://optimitour.firebaseio.com",
+    "project_id": "optimitour",
+    "storage_bucket": "optimitour.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:387395771951:android:4c648ddb0c70c95c53f0da",
+        "android_client_info": {
+          "package_name": "com.example.optimitour"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "387395771951-8dv8fgia2g6gns3ohrpfvggvnorj4tvb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzdXodfMJPf7a1gfGwzg0KthQ-I_F7TDI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "387395771951-8dv8fgia2g6gns3ohrpfvggvnorj4tvb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
