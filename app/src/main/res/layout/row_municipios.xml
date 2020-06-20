@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="2dp"
+    android:background="@color/white"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_verde"
+        android:padding="5dp">
+        <ImageView
+            android:id="@+id/imagenMuni"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:src="@drawable/logo">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/nombreMuni"
+            android:layout_width="258dp"
+            android:layout_height="85dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="11dp"
+            android:layout_toEndOf="@id/imagenMuni"
+            android:layout_toRightOf="@id/imagenMuni"
+            android:fontFamily="@font/mont"
+            android:text="Nombre"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

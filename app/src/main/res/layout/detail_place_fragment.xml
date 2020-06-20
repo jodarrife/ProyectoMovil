@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="2dp"
+    android:background="#cccc"
+    app:cardUseCompatPadding="true">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="2dp"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:id="@+id/nombre_sitio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre Sitio"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:gravity="center">
+        </TextView>
+    <ImageView
+        android:id="@+id/imagen_detalle"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logo"
+        android:layout_gravity="center"
+        android:paddingTop="10dp">
+    </ImageView>
+    <TextView
+        android:id="@+id/descripcion_sitio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descripcion Sitio"
+        android:textStyle="italic"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:gravity="start">
+    </TextView>
+    <TextView
+        android:id="@+id/horario_detalle_sitio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Horario"
+        android:textStyle="bold"
+        android:textSize="27sp"
+        android:textColor="@color/black"
+        android:gravity="start">
+    </TextView>
+    <TextView
+        android:id="@+id/horario_sitio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Horario Sitio"
+        android:textStyle="italic"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        android:gravity="start">
+    </TextView>
+    <TextView
+        android:id="@+id/ubicacion_detalle_sitio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ubicación"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="27sp"
+        android:gravity="start">
+    </TextView>
+    <TextView
+        android:id="@+id/ubicacion_sitio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ubicación Sitio"
+        android:textStyle="italic"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        android:gravity="start">
+    </TextView>
+    </LinearLayout>
+</ScrollView>
+

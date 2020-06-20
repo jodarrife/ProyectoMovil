@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009245"
+    android:orientation="vertical"
+    tools:context=".Vistas.Login.BienvenidoActivity">
+
+    <ImageView
+        android:id="@+id/ima"
+        android:layout_width="match_parent"
+        android:layout_height="271dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="-3dp"
+        android:src="@drawable/welcome_sup"
+        android:transitionName="logo_image" />
+
+    <LinearLayout
+        android:id="@+id/layo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ima"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="3dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnInicioLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button_ronde"
+            android:fontFamily="@font/mont"
+            android:text="@string/login"
+            android:textColor="#009245"
+            android:transitionName="button_trans" />
+
+        <Button
+            android:id="@+id/btnInicioInvitado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button_ronde"
+            android:fontFamily="@font/mont"
+            android:text="Entrar Como invitado"
+            android:textColor="#009245"
+            android:transitionName="button_trans" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ima2"
+        android:layout_width="match_parent"
+        android:layout_height="355dp"
+        android:layout_below="@+id/layo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-2dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:src="@drawable/welcome_abajo"
+        android:transitionName="abajo_image" />
+</RelativeLayout>

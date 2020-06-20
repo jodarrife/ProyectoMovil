@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">OptimiTour</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="others">others</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="login">Login</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="forget_password">Recuperar Contraseña</string>
+    <string name="create_acount">Create una Cuenta</string>
+    <string name="Registrar">Registrar</string>
+
+
+    <string name="navigation_drawer_open">Open nacigation drawer</string>
+    <string name="navigation_drawer_close">Close nacigation drawer</string>
+</resources>

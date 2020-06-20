@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <ripple xmlns:Android="http://schemas.Android.com/apk/res/Android"
+        Android:color="?android:colorControlHighlight">
+        <item>
+            <shape Android:shape="oval">
+                <solid Android:color="?android:colorAccent" />
+            </shape>
+        </item>
+    </ripple>
+</selector>

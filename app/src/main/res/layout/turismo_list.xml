@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="2dp"
+    android:background="@color/white"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_norunde"
+        android:padding="5dp">
+        <ImageView
+            android:id="@+id/turismoImage"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:src="@drawable/logo">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/turismoName"
+            android:layout_width="279dp"
+            android:layout_height="76dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="19dp"
+            android:layout_toEndOf="@id/turismoImage"
+            android:layout_toRightOf="@id/turismoImage"
+            android:fontFamily="@font/mont"
+            android:text="Nombre del sitio"
+            android:textColor="@color/verdeOsciro"
+            android:textSize="30sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/municipioturismo"
+            android:layout_width="199dp"
+            android:layout_height="0dp"
+
+
+            android:layout_below="@+id/placeName"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@id/turismoImage"
+            android:layout_toRightOf="@id/turismoImage"
+            android:fontFamily="@font/mont"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="1sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

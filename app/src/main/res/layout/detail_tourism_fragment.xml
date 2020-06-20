@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="2dp"
+    android:background="#cccc"
+    app:cardUseCompatPadding="true">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:id="@+id/nombre_turismo1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre Turismo"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:gravity="center">
+        </TextView>
+        <ImageView
+            android:id="@+id/imagen_detalle_tur"
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center"
+            android:paddingTop="10dp">
+        </ImageView>
+        <TextView
+            android:id="@+id/descripcion_turismo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descripcion Turismo"
+            android:textStyle="italic"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:gravity="start">
+        </TextView>
+        <TextView
+            android:id="@+id/recomendacion_turismo_detalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recomendaciones"
+            android:textStyle="bold"
+            android:textSize="27sp"
+            android:textColor="@color/black"
+            android:gravity="start">
+        </TextView>
+        <TextView
+            android:id="@+id/recomendacion_turismo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recomendacion Turismo"
+            android:textStyle="italic"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:gravity="start">
+        </TextView>
+        <TextView
+            android:id="@+id/ubicacion_detalle_turismo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ubicación"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="27sp"
+            android:gravity="start">
+        </TextView>
+        <TextView
+            android:id="@+id/ubicacion_turismo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ubicación turismo"
+            android:textStyle="italic"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:gravity="start">
+        </TextView>
+        <TextView
+            android:id="@+id/contacto_detalle_turismo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contacto"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="27sp"
+            android:gravity="start">
+        </TextView>
+        <TextView
+            android:id="@+id/contacto_turismo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contacto turismo"
+            android:textStyle="italic"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:gravity="start">
+        </TextView>
+    </LinearLayout>
+</ScrollView>
+

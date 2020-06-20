@@ -1,0 +1,1180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Vistas.Navegación.MunicipioListaActivity">
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relativeToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@drawable/button_norunde"
+            android:elevation="8dp">
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/flecha_atras" />
+            <TextView
+                android:id="@+id/textIdentificador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@color/white"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="CESAR"
+                android:textAllCaps="true"
+                android:textColor="@color/verdeOsciro"
+                android:textSize="24dp"
+                app:fontFamily="@font/mont" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="4dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textHome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="MUNICIPIOS"
+                    android:textAllCaps="true"
+                    android:textColor="@color/verdeOsciro"
+                    android:textSize="30sp"
+                    app:fontFamily="@font/mont" />
+
+                <!--Aguachica-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="8dp">
+                    <!--el del logo dentro-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/round1">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="13dp"
+
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/croquis_aguachica" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:fontFamily="@font/mont"
+                            android:padding="30dp"
+                            android:text="Aguachica"
+                            android:textColor="@color/white"
+                            android:textSize="35dp" />
+
+                        <Button
+                            android:id="@+id/btnAguachica"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentBottom="true"
+                            android:background="#00000000"
+                            android:padding="20dp"
+                            android:text="Expandir Municipio"
+                            android:textColor="@color/white" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <!--Agustín Codazzi-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="8dp">
+                    <!--el del logo dentro-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/round3">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:src="@drawable/croquis_codazzi" />
+
+                        <TextView
+                            android:layout_width="180dp"
+                            android:layout_height="101dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="0dp"
+                            android:fontFamily="@font/mont"
+                            android:padding="10dp"
+                            android:text="Agustin Codazzi"
+                            android:textColor="@color/verdeOsciro"
+                            android:textSize="35dp" />
+
+                        <Button
+                            android:id="@+id/btnCodazzi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:background="#00FFFFFF"
+                            android:padding="20dp"
+                            android:text="Expandir Municipio"
+                            android:textColor="@color/verdeOsciro" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <!--Astrea-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="8dp">
+                    <!--el del logo dentro-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/round2">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="13dp"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/croquis_astrea" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:fontFamily="@font/mont"
+                            android:padding="30dp"
+                            android:text="Astrea"
+                            android:textColor="@color/white"
+
+                            android:textSize="35dp" />
+
+                        <Button
+                            android:id="@+id/btnAstrea"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentBottom="true"
+                            android:background="#00FFFFFF"
+                            android:padding="20dp"
+                            android:text="Expandir Municipio"
+                            android:textColor="@color/white" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <!--Becerril-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="8dp">
+                    <!--el del logo dentro-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/round1">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="13dp"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/croquis_becerril" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:fontFamily="@font/mont"
+                            android:padding="30dp"
+                            android:text="Becerril"
+                            android:textColor="@color/white"
+                            android:textSize="35dp" />
+
+                        <Button
+                            android:id="@+id/btnBecerril"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentBottom="true"
+                            android:background="#00FFFFFF"
+                            android:padding="20dp"
+                            android:text="Expandir Municipio"
+                            android:textColor="@color/white" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <!--Bosconia-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="8dp">
+                    <!--el del logo dentro-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/round3">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:src="@drawable/croquis_bosconia" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:fontFamily="@font/mont"
+                            android:padding="30dp"
+                            android:text="Bosconia"
+                            android:textColor="@color/verdeOsciro"
+
+                            android:textSize="35dp" />
+
+                        <Button
+                            android:id="@+id/btnBosconia"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:background="#00FFFFFF"
+                            android:padding="20dp"
+                            android:text="Expandir Municipio"
+                            android:textColor="@color/verdeOsciro" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <!--Chimichagua-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="8dp">
+                    <!--el del logo dentro-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/round2">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="13dp"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/croquis_chimichagua" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:fontFamily="@font/mont"
+                            android:padding="20dp"
+                            android:text="Chimichagua"
+                            android:textColor="@color/white"
+
+                            android:textSize="35dp" />
+
+                        <Button
+                            android:id="@+id/btnChimichagua"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentBottom="true"
+                            android:background="#00FFFFFF"
+                            android:padding="20dp"
+                            android:text="Expandir Municipio"
+                            android:textColor="@color/white" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!--Chiriguaná-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="8dp">
+                    <!--el del logo dentro-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/round1">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="13dp"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/croquis_chiriguana" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:fontFamily="@font/mont"
+                            android:padding="30dp"
+                            android:text="Chiriguaná"
+                            android:textColor="@color/white"
+                            android:textSize="35dp" />
+
+                        <Button
+                            android:id="@+id/btnChiriguana"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentBottom="true"
+                            android:background="#00FFFFFF"
+                            android:padding="20dp"
+                            android:text="Expandir Municipio"
+                            android:textColor="@color/white" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <!--Curumaní-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="8dp">
+                    <!--el del logo dentro-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/round3">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:src="@drawable/croquis_curumani" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:fontFamily="@font/mont"
+                            android:padding="30dp"
+                            android:text="Curumaní"
+                            android:textColor="@color/verdeOsciro"
+                            android:textSize="35dp" />
+
+                        <Button
+                            android:id="@+id/btnCurumani"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:background="#00FFFFFF"
+                            android:padding="20dp"
+                            android:text="Expandir Municipio"
+                            android:textColor="@color/verdeOsciro" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <!--El Copey-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="8dp">
+                    <!--el del logo dentro-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/round2">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="13dp"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/croquis_copey" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:fontFamily="@font/mont"
+                            android:padding="30dp"
+                            android:text="El Copey"
+                            android:textColor="@color/white"
+
+                            android:textSize="35dp" />
+
+                        <Button
+                            android:id="@+id/btnCopey"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentBottom="true"
+                            android:background="#00FFFFFF"
+                            android:padding="20dp"
+                            android:text="Expandir Municipio"
+                            android:textColor="@color/white" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <!--El Paso-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="8dp">
+                    <!--el del logo dentro-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/round1">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="13dp"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/croquis_elpaso" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:fontFamily="@font/mont"
+                            android:padding="30dp"
+                            android:text="El Paso"
+                            android:textColor="@color/white"
+                            android:textSize="35dp" />
+
+                        <Button
+                            android:id="@+id/btnPaso"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentBottom="true"
+                            android:background="#00FFFFFF"
+                            android:padding="20dp"
+                            android:text="Expandir Municipio"
+                            android:textColor="@color/white" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <!--Gamarra-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="8dp">
+                    <!--el del logo dentro-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/round3">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:src="@drawable/croquis_gamarra" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:fontFamily="@font/mont"
+                            android:padding="30dp"
+                            android:text="Gamarra"
+                            android:textColor="@color/verdeOsciro"
+
+                            android:textSize="35dp" />
+
+                        <Button
+                            android:id="@+id/btnGamarra"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:background="#00FFFFFF"
+                            android:padding="20dp"
+                            android:text="Expandir Municipio"
+                            android:textColor="@color/verdeOsciro" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <!--González-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="8dp">
+                    <!--el del logo dentro-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/round2">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="13dp"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/croquis_gonzalez" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:fontFamily="@font/mont"
+                            android:padding="20dp"
+                            android:text="González"
+                            android:textColor="@color/white"
+
+                            android:textSize="35dp" />
+
+                        <Button
+                            android:id="@+id/btnGonzalez"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentBottom="true"
+                            android:background="#00FFFFFF"
+                            android:padding="20dp"
+                            android:text="Expandir Municipio"
+                            android:textColor="@color/white" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <!--La Gloria-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="8dp">
+                    <!--el del logo dentro-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/round1">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="13dp"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/croquis_lagloria" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:fontFamily="@font/mont"
+                            android:padding="30dp"
+                            android:text="La Gloria"
+                            android:textColor="@color/white"
+                            android:textSize="35dp" />
+
+                        <Button
+                            android:id="@+id/btnLaGloria"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentBottom="true"
+                            android:background="#00FFFFFF"
+                            android:padding="20dp"
+                            android:text="Expandir Municipio"
+                            android:textColor="@color/white" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <!--La Jagua de Ibirico-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="8dp">
+                    <!--el del logo dentro-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/round3">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:src="@drawable/croquis_lajagua" />
+
+                        <TextView
+                            android:layout_width="205dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:fontFamily="@font/mont"
+                            android:padding="10dp"
+                            android:text="La Jagua de Ibirico"
+                            android:textColor="@color/verdeOsciro"
+                            android:textSize="35dp" />
+
+                        <Button
+                            android:id="@+id/btnLaJagua"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:background="#00FFFFFF"
+                            android:padding="20dp"
+                            android:text="Expandir Municipio"
+                            android:textColor="@color/verdeOsciro" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <!--La Paz-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="8dp">
+                    <!--el del logo dentro-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/round2">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="13dp"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/croquis_lapaz" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:fontFamily="@font/mont"
+                            android:padding="30dp"
+                            android:text="La Paz"
+                            android:textColor="@color/white"
+
+                            android:textSize="35dp" />
+
+                        <Button
+                            android:id="@+id/btnLaPaz"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentBottom="true"
+                            android:background="#00FFFFFF"
+                            android:padding="20dp"
+                            android:text="Expandir Municipio"
+                            android:textColor="@color/white" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <!--Manaure Balcón del Cesar-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="8dp">
+                    <!--el del logo dentro-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/round1">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="13dp"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/croquis_manaure" />
+
+                        <TextView
+                            android:layout_width="239dp"
+                            android:layout_height="99dp"
+                            android:layout_alignParentLeft="true"
+                            android:fontFamily="@font/mont"
+                            android:padding="10dp"
+                            android:text="Manaure Balcón del Cesar"
+                            android:textColor="@color/white"
+                            android:textSize="25dp" />
+
+                        <Button
+                            android:id="@+id/btnManaure"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentBottom="true"
+                            android:background="#00FFFFFF"
+                            android:padding="20dp"
+                            android:text="Expandir Municipio"
+                            android:textColor="@color/white" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <!--Pailitas-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="8dp">
+                    <!--el del logo dentro-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/round3">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:src="@drawable/croquis_pailitas" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:fontFamily="@font/mont"
+                            android:padding="30dp"
+                            android:text="Pailitas"
+                            android:textColor="@color/verdeOsciro"
+
+                            android:textSize="35dp" />
+
+                        <Button
+                            android:id="@+id/btnPailitas"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:background="#00FFFFFF"
+                            android:padding="20dp"
+                            android:text="Expandir Municipio"
+                            android:textColor="@color/verdeOsciro" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <!--Pelaya-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="8dp">
+                    <!--el del logo dentro-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/round2">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="13dp"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/croquis_pelaya" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:fontFamily="@font/mont"
+                            android:padding="20dp"
+                            android:text="Pelaya"
+                            android:textColor="@color/white"
+
+                            android:textSize="35dp" />
+
+                        <Button
+                            android:id="@+id/btnPelaya"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentBottom="true"
+                            android:background="#00FFFFFF"
+                            android:padding="20dp"
+                            android:text="Expandir Municipio"
+                            android:textColor="@color/white" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <!--Pueblo Bello-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="8dp">
+                    <!--el del logo dentro-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/round1">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="13dp"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/croquis_pueblobello" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:fontFamily="@font/mont"
+                            android:padding="30dp"
+                            android:text="Pueblo Bello"
+                            android:textColor="@color/white"
+                            android:textSize="35dp" />
+
+                        <Button
+                            android:id="@+id/btnPuebloBello"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentBottom="true"
+                            android:background="#00FFFFFF"
+                            android:padding="20dp"
+                            android:text="Expandir Municipio"
+                            android:textColor="@color/white" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <!--Río de Oro-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="8dp">
+                    <!--el del logo dentro-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/round3">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:src="@drawable/croquis_riodeoro" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:fontFamily="@font/mont"
+                            android:padding="30dp"
+                            android:text="Río de Oro"
+                            android:textColor="@color/verdeOsciro"
+                            android:textSize="35dp" />
+
+                        <Button
+                            android:id="@+id/btnRioOro"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:background="#00FFFFFF"
+                            android:padding="20dp"
+                            android:text="Expandir Municipio"
+                            android:textColor="@color/verdeOsciro" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <!--San Alberto-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="8dp">
+                    <!--el del logo dentro-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/round2">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="13dp"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/croquis_sanalberto" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:fontFamily="@font/mont"
+                            android:padding="30dp"
+                            android:text="San Alberto"
+                            android:textColor="@color/white"
+
+                            android:textSize="35dp" />
+
+                        <Button
+                            android:id="@+id/btnSanAlberto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentBottom="true"
+                            android:background="#00FFFFFF"
+                            android:padding="20dp"
+                            android:text="Expandir Municipio"
+                            android:textColor="@color/white" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <!--San Diego-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="8dp">
+                    <!--el del logo dentro-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/round1">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="13dp"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/croquis_sandiego" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:fontFamily="@font/mont"
+                            android:padding="30dp"
+                            android:text="San Diego"
+                            android:textColor="@color/white"
+                            android:textSize="35dp" />
+
+                        <Button
+                            android:id="@+id/btnSanDiego"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentBottom="true"
+                            android:background="#00FFFFFF"
+                            android:padding="20dp"
+                            android:text="Expandir Municipio"
+                            android:textColor="@color/white" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <!--San Martín-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="8dp">
+                    <!--el del logo dentro-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/round3">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:src="@drawable/croquis_sanmartin" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:fontFamily="@font/mont"
+                            android:padding="30dp"
+                            android:text="San Martín"
+                            android:textColor="@color/verdeOsciro"
+
+                            android:textSize="35dp" />
+
+                        <Button
+                            android:id="@+id/btnSanMartin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:background="#00FFFFFF"
+                            android:padding="20dp"
+                            android:text="Expandir Municipio"
+                            android:textColor="@color/verdeOsciro" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <!--Tamalameque-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="8dp">
+                    <!--el del logo dentro-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/round2">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="13dp"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/logo" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:fontFamily="@font/mont"
+                            android:padding="10dp"
+                            android:text="Tamalameque"
+                            android:textColor="@color/white"
+
+                            android:textSize="35dp" />
+
+                        <Button
+                            android:id="@+id/btnTamalameque"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentBottom="true"
+                            android:background="#00FFFFFF"
+                            android:padding="20dp"
+                            android:text="Expandir Municipio"
+                            android:textColor="@color/white" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!--Valledupar-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="8dp">
+                    <!--el del logo dentro-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/round1">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="13dp"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/logo" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:fontFamily="@font/mont"
+                            android:padding="30dp"
+                            android:text="Valledupar"
+                            android:textColor="@color/white"
+                            android:textSize="35dp" />
+
+                        <Button
+                            android:id="@+id/btnValledupar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentBottom="true"
+                            android:background="#00FFFFFF"
+                            android:padding="20dp"
+                            android:text="Expandir Municipio"
+                            android:textColor="@color/white" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

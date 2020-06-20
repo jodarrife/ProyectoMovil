@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home2"
+        android:title="Home" />
+    <item
+        android:id="@+id/place"
+        android:icon="@drawable/ubicacion"
+        android:title="Sitios de interes" />
+    <item
+        android:id="@+id/history"
+        android:icon="@drawable/historia2"
+        android:title="Historia" />
+    <item
+        android:id="@+id/calendar"
+        android:icon="@drawable/calendario"
+        android:title="Calendario Actividades" />
+    <item
+        android:id="@+id/turismo"
+        android:icon="@drawable/turismo"
+        android:title="Turismo Ecológico" />
+
+
+    <item android:title="@string/others"
+        android:textColor="#000000">
+        <menu>
+            <item
+                android:id="@+id/btnAbout"
+                android:title="¿Quienes Somos?"
+                android:icon="@drawable/about_us"
+                android:background="@drawable/redondeado"/>
+            <item
+                android:id="@+id/cerrarSesion"
+                android:title="Cerrar Sesion"
+                android:icon="@drawable/cerrar"
+                android:background="@drawable/redondeado"/>
+        </menu>
+    </item>
+
+</menu>

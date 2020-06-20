@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.optimitour">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".HomeSinInternetActivity"></activity>
+        <activity android:name=".Vistas.Navegación.MunicipioActivity" />
+        <activity android:name=".Vistas.Navegación.Favoritos.FavoritoActivity" />
+        <activity android:name=".Vistas.Navegación.Calendario.CalendarioActivity" />
+        <activity android:name=".Vistas.Navegación.Turismo.TurismoActivity" />
+        <activity android:name=".Vistas.Navegación.Turismo.DetalleTurismoActivity" />
+        <activity android:name=".Vistas.Navegación.Historia.DetalleHistoriaActivity" />
+        <activity android:name=".Vistas.Navegación.Historia.FiltroHistoriaActivity" />
+        <activity android:name=".Vistas.Navegación.Sitios.DetalleSitioActivity" />
+        <activity android:name=".Vistas.Navegación.Historia.HistoriaActivity" />
+        <activity android:name=".Vistas.Navegación.Sitios.FiltroSitioActivity" />
+        <activity android:name=".Vistas.Navegación.Sitios.SitiosActivity" />
+        <activity android:name=".Vistas.Navegación.MunicipioListaActivity" />
+        <activity android:name=".Vistas.Navegación.Perfil.CerrarSesionActivity" />
+        <activity android:name=".Vistas.Navegación.Perfil.PerfilActivity" />
+        <activity android:name=".Vistas.Home.HomeActivity" />
+        <activity android:name=".Auxiliares.SplashCargaMalActivity" />
+        <activity android:name=".Auxiliares.SplashCargadorActivity" />
+        <activity android:name=".Vistas.Login.BienvenidoActivity" />
+        <activity android:name=".Vistas.Login.RegistrarLoginActivity" />
+        <activity android:name=".Auxiliares.SplashInicioActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Vistas.Login.LoginActivity" />
+    </application>
+
+</manifest>

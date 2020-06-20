@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Vistas.Navegación.Turismo.DetalleTurismoActivity">
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relativeToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@drawable/button_norunde"
+            android:elevation="8dp">
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/flecha_atras" />
+
+            <ImageView
+                android:id="@+id/btn_Home"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/home2" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/nombre_turismo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="Nombre"
+                android:textColor="@color/verdeOsciro"
+                android:textSize="30sp"
+                app:fontFamily="@font/mont" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/nombre_turismo"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imagen_detalle"
+                            android:layout_width="match_parent"
+                            android:layout_height="193dp"
+                            android:layout_centerHorizontal="true"
+                            app:srcCompat="@drawable/home2" />
+                    </RelativeLayout>
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:background="#FFFFFF">
+
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/dire"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginRight="30dp"
+                                    android:fontFamily="@font/mont"
+                                    android:gravity="right"
+                                    android:text="DIRECCION"
+                                    android:textColor="@color/verdeOsciro"
+                                    android:textSize="30dp" />
+
+                                <TextView
+                                    android:id="@+id/ubicacion_turismo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_below="@+id/dire"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginLeft="40dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="40dp"
+                                    android:fontFamily="@font/mont"
+                                    android:text="DIRECCION"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp" />
+
+                                <TextView
+                                    android:id="@+id/desc"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_below="@id/ubicacion_turismo"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_marginRight="30dp"
+                                    android:fontFamily="@font/mont"
+                                    android:gravity="right"
+                                    android:text="DESCRIPCION"
+                                    android:textColor="@color/verdeOsciro"
+                                    android:textSize="30dp" />
+
+                                <TextView
+                                    android:id="@+id/descripcion_turismo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_below="@+id/desc"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginLeft="40dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="40dp"
+                                    android:fontFamily="@font/mont"
+                                    android:text="DESCRIPCION"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp" />
+
+                            </RelativeLayout>
+
+                        </ScrollView>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
